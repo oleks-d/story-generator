@@ -1,8 +1,9 @@
 package com.sansanich.storygenerator.entities;
 
-public class GeneralObject {
+public class NamedWithID {
     int id;
     String name;
     String description;
+    String logo;
 
 }

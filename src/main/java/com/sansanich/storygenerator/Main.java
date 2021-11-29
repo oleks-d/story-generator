@@ -1,7 +1,8 @@
 package com.sansanich.storygenerator;
 
-import com.sansanich.storygenerator.entities.Location;
+import com.sansanich.storygenerator.geology.Location;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -9,7 +10,7 @@ public class Main {
 
 
         World world = getWorld("");
-        Hero hero = getHero("");
+        Hero hero = getHero("", world);
 
         game(world, hero);
 
@@ -18,12 +19,15 @@ public class Main {
     }
 
     private static void game(World world, Hero hero) {
-        //showLocation(hero.currentLocation);
+        //showLocation(hero.body.currentLocation);
         String stage = "";
-        while((stage = turn()) != null) {
+        while((stage = turn(world, hero)) != null) {
             System.out.println(stage);
             if (stage.equals("q")) {
                     break;
+            }
+            if (stage.equals("_")) {
+                System.out.println(world.timeline.isDay()? "День":"Ночь");
             }
         }
     }
@@ -32,7 +36,7 @@ public class Main {
 
     }
 
-    private static String turn() {
+    private static String turn(World world, Hero hero) {
         Scanner s = new Scanner(System.in);
         return s.next();
     }
@@ -52,9 +56,9 @@ public class Main {
         return null;
     }
 
-    private static Hero getHero(String savedName) {
+    private static Hero getHero(String savedName, World world) {
         if(savedName.equals(""))
-            return generateHero();
+            return generateHero(world);
         else
             return loadHero(savedName);
     }
@@ -63,7 +67,10 @@ public class Main {
         return null;
     }
 
-    private static Hero generateHero() {
+    private static Hero generateHero(World world) {
+        Hero newHero = new Hero();
+       // newHero.body.currentLocation = world.areas.get(0);
+
         return null;
     }
 }

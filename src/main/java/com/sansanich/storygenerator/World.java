@@ -1,7 +1,7 @@
 package com.sansanich.storygenerator;
 
-import com.sansanich.storygenerator.entities.Character;
-import com.sansanich.storygenerator.entities.Location;
+import com.sansanich.storygenerator.creatures.Character;
+import com.sansanich.storygenerator.geology.Location;
 
 import java.util.ArrayList;
 

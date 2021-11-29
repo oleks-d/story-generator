@@ -1,4 +1,4 @@
-package com.sansanich.storygenerator.entities;
+package com.sansanich.storygenerator.flow;
 
 import java.util.ArrayList;
 

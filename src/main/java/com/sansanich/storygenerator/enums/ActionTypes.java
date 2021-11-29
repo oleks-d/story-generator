@@ -1,4 +1,4 @@
-package com.sansanich.storygenerator.entities.enums;
+package com.sansanich.storygenerator.enums;
 
 public enum ActionTypes {
     ADD_ATTRIBUTE,

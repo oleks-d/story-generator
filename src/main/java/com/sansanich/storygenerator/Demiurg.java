@@ -1,8 +1,7 @@
 package com.sansanich.storygenerator;
 
-import com.sansanich.storygenerator.entities.Action;
-import com.sansanich.storygenerator.entities.Condition;
-import com.sansanich.storygenerator.entities.enums.ConditionTypes;
+import com.sansanich.storygenerator.flow.Action;
+import com.sansanich.storygenerator.flow.Condition;
 
 public class Demiurg {
 
