@@ -8,7 +8,7 @@ public class Character extends GameObject{
     ArrayList<Skill> skills;
     ArrayList<Trait> traits;
     CharAttributes stats;
-    Location currentLocation;
+    public Location currentLocation;
 
     ArrayList<String> organizations;
     int rating;
