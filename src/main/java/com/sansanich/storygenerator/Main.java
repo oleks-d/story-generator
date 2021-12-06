@@ -1,12 +1,14 @@
 package com.sansanich.storygenerator;
 
 import com.sansanich.storygenerator.geology.Location;
+import com.sansanich.storygenerator.worldgenerator.WorldGenerator;
 
+import java.io.IOException;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
 
         World world = getWorld("");
@@ -41,9 +43,9 @@ public class Main {
         return s.next();
     }
 
-    private static World getWorld(String savedName) {
+    private static World getWorld(String savedName) throws IOException {
         if(savedName.equals(""))
-            return generateWorld();
+            return WorldGenerator.generateWorld(savedName.hashCode());
         else
             return loadWorld(savedName);
     }

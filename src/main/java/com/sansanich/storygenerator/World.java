@@ -6,8 +6,7 @@ import com.sansanich.storygenerator.geology.Location;
 import java.util.ArrayList;
 
 public class World {
-    ArrayList<Location> areas;
-    ArrayList<Character> characters;
-    Timeline timeline;
-
+    public ArrayList<Location> areas;
+    public ArrayList<Character> characters;
+    public Timeline timeline;
 }

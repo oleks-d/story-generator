@@ -1,0 +1,234 @@
+{ "id" : "1" ,
+  "name" : "Арелон",
+  "description" : "Место полное чудес и ужасов",
+  "areas" : [
+
+    {
+      "id": "START",
+      "description" : "Одинокий мьіс заросший лесом. Тут начинаються приключения.",
+      "name" : "Одинокий мьіс",
+      "logo" : "Мьіс",
+      "binom" : "FOREST",
+      "complexity" : 1,
+      "ways" : [
+        {
+          "id" : "way_to_city",
+          "name" : "Дорога в город",
+          "description" : "Вьітоптаная дорога к поселению",
+          "logo": "road1.png",
+          "image": "road1.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:CITY:way_to_start_from_city"
+            }
+          ]
+        },
+        {
+          "id" : "way_to_forest",
+          "name" : "Тропа в лес",
+          "description" : "Заросшая тропа в лес",
+          "logo": "road2.png",
+          "image": "road2.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:CITY:way_to_start_from_forest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CITY",
+      "description" : "Городок полньій нових картин и запахов",
+      "name" : "Город Столица Арелон",
+      "logo" : "Город",
+      "binom" : "CITY",
+      "complexity" : 1,
+      "ways" : [
+        {
+          "id" : "way_to_start_from_city",
+          "name" : "Дорога к Мьісу",
+          "description" : "Вьітоптаная дорога к мьісу",
+          "logo": "road1.png",
+          "image": "road1.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:START:way_to_сity"
+            }
+          ]
+        },
+        {
+          "id" : "way_to_forest_from_city",
+          "name" : "Дорога в лес",
+          "description" : "Дорога в лес",
+          "logo": "road2.png",
+          "image": "road2.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:FOREST:way_to_city_from_forest"
+            }
+          ]
+        },
+       {
+          "id" : "way_to_mountain_from_city",
+          "name" : "Дорога в Северньіе горьі",
+          "description" : "Дорога в Северньіе горьі",
+          "logo": "road2.png",
+          "image": "road2.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:MOUNTAIN:way_to_city_from_mountain"
+            }]
+    }]},
+    {
+      "id": "FOREST",
+      "description" : "Лес",
+      "name" : "Лес",
+      "logo" : "Лес",
+      "binom" : "FOREST",
+      "complexity" : 2,
+      "ways" : [
+        {
+          "id" : "way_to_city_from_forest",
+          "name" : "Дорога в город",
+          "description" : "Вьітоптаная дорога к поселению",
+          "logo": "road1.png",
+          "image": "road1.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:CITY:way_to_forest_from_city"
+            }
+          ]
+        },
+        {
+          "id" : "way_to_deep_forest",
+          "name" : "Тропа в Глухой лес",
+          "description" : "Заросшая тропа в Глухой лес",
+          "logo": "road2.png",
+          "image": "road2.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:DEEP_FOREST:way_to_forest_from_deep_forest"
+            }
+          ]
+        },
+        {
+          "id" : "way_to_peek_from_forest",
+          "name" : "Тропа на Пик Дракона",
+          "description" : "Тропа на Пик Дракона",
+          "logo": "road2.png",
+          "image": "road2.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:PEAK:way_to_forest_from_peek"
+            }
+          ]
+        }
+      ]
+    },
+    {
+          "id": "DEEP_FOREST",
+          "description" : "Глухой Лес",
+          "name" : "Глухой Лес",
+          "logo" : "Лес",
+          "binom" : "FOREST",
+          "complexity" : 3,
+          "ways" : [
+            {
+              "id" : "way_to_forest_from_deep_forest",
+              "name" : "Путь в Лес",
+              "description" : "Путь в Лес",
+              "logo": "road1.png",
+              "image": "road1.png",
+              "dialogs" : [
+                {
+                  "initialReplic" : "",
+                  "startActionText" : "TRANSPORT:FOREST:way_to_deep_forest"
+                }
+              ]
+            }
+          ]
+        },
+    {
+      "id": "MOUNTAIN",
+      "description" : "Невьісшкие горьі покрьітьіе снегом.",
+      "name" : "Северньіе горьі",
+      "logo" : "Горьі",
+      "binom" : "MOUNTAIN",
+      "complexity" : 2,
+      "ways" : [
+        {
+          "id" : "way_to_city_from_mountain",
+          "name" : "Дорога в город",
+          "description" : "Вьітоптаная дорога к поселению",
+          "logo": "road1.png",
+          "image": "road1.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:CITY:way_to_mountain_from_city"
+            }
+          ]
+        },
+        {
+          "id" : "way_to_peek_from_mountain",
+          "name" : "Подем на Пик",
+          "description" : "Подем на Пик",
+          "logo": "road2.png",
+          "image": "road2.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:PEEK:way_to_mountain_from_peek"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FINISH",
+      "description" : "Одинокий горньій пик. Тут заканчиваються приключения.",
+      "name" : "Пик Дракона",
+      "logo" : "Пик",
+      "binom" : "MOUNTAIN",
+      "complexity" : 3,
+      "ways" : [
+        {
+          "id" : "way_to_mountain_from_peek",
+          "name" : "Спуск в горьі",
+          "description" : "Спуск ниже в горьі",
+          "logo": "road1.png",
+          "image": "road1.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:MOUNTAIN:way_to_peek_from_mountain"
+            }
+          ]
+        },
+        {
+          "id" : "way_to_forest_from_peek",
+          "name" : "Склон в лес",
+          "description" : "Заросшая тропа на склоне ведущая в лес",
+          "logo": "road2.png",
+          "image": "road2.png",
+          "dialogs" : [
+            {
+              "initialReplic" : "",
+              "startActionText" : "TRANSPORT:CITY:way_to_peek_from_forest"
+            }
+          ]
+        }
+      ]
+    }
+
+  ]
+}

@@ -6,12 +6,13 @@ import com.sansanich.storygenerator.flow.Dialog;
 import com.sansanich.storygenerator.items.Item;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class InteractibleObject extends NamedWithID {
 
-    ArrayList<Item> items;
-    ArrayList<Dialog> dialogs;
-    ArrayList<Trigger> triggers;
+    List<Item> items;
+    List<Dialog> dialogs;
+    List<Trigger> triggers;
 
     String image;
 }
