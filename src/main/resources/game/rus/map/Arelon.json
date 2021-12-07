@@ -10,7 +10,7 @@
       "logo" : "Мьіс",
       "binom" : "FOREST",
       "complexity" : 1,
-      "ways" : [
+      "objects" : [
         {
           "id" : "way_to_city",
           "name" : "Дорога в город",
@@ -46,7 +46,7 @@
       "logo" : "Город",
       "binom" : "CITY",
       "complexity" : 1,
-      "ways" : [
+      "objects" : [
         {
           "id" : "way_to_start_from_city",
           "name" : "Дорога к Мьісу",
@@ -92,7 +92,7 @@
       "logo" : "Лес",
       "binom" : "FOREST",
       "complexity" : 2,
-      "ways" : [
+      "objects" : [
         {
           "id" : "way_to_city_from_forest",
           "name" : "Дорога в город",
@@ -141,7 +141,7 @@
           "logo" : "Лес",
           "binom" : "FOREST",
           "complexity" : 3,
-          "ways" : [
+          "objects" : [
             {
               "id" : "way_to_forest_from_deep_forest",
               "name" : "Путь в Лес",
@@ -164,7 +164,7 @@
       "logo" : "Горьі",
       "binom" : "MOUNTAIN",
       "complexity" : 2,
-      "ways" : [
+      "objects" : [
         {
           "id" : "way_to_city_from_mountain",
           "name" : "Дорога в город",
@@ -200,7 +200,7 @@
       "logo" : "Пик",
       "binom" : "MOUNTAIN",
       "complexity" : 3,
-      "ways" : [
+      "objects" : [
         {
           "id" : "way_to_mountain_from_peek",
           "name" : "Спуск в горьі",

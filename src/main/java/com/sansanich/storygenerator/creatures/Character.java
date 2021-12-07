@@ -3,12 +3,12 @@ package com.sansanich.storygenerator.creatures;
 import com.sansanich.storygenerator.entities.NamedWithID;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class Character extends NamedWithID {
+public class Character extends Creature {
 
-    public Creature body; // warrior, wolf etc.
-    ArrayList<Trait> traits;
+    public List<Trait> traits;
 
-    ArrayList<String> organizations;
-    int rating;
+    public List<String> organizations;
+    public int rating;
 }

@@ -1,0 +1,88 @@
+[{
+  "id" : "swamp1",
+  "name" : "Болото",
+  "description" : "Мерзкое болото",
+  "logo" : "Болото",
+
+  "complexity" : 0,
+  "binom": "FOREST",
+
+  "enterDialogs" : [
+  {
+    "initialReplic" : "Ноги вязнут при хотьбе.",
+    "startActionText" : "ADD_EFFECT:SLOW:-1"
+  }
+  ],
+  "exitDialogs" : [
+    {
+      "initialReplic" : "Ноги больше не вязнут при хотьбе.",
+      "startActionText" : "REMOVE_EFFECT:SLOW:-1"
+    }
+  ]
+},
+
+{
+"id" : "field1",
+"name" : "Поляна",
+"description" : "Поляна",
+"logo" : "Поляна",
+"complexity" : 0,
+"binom": "FOREST",
+
+  "itemsToGenerate" : [ "mashroom1", "flower1", "flower2" ]
+},
+
+  {
+    "id" : "field2",
+    "name" : "Роща",
+    "description" : "Роща",
+    "logo" : "Роща",
+    "complexity" : 0,
+    "binom": "FOREST",
+    "itemsToGenerate" : [ "mashroom2", "mashroom1" ]
+  },
+
+  {
+    "id" : "field3",
+    "name" : "Ручей",
+    "description" : "Ручей",
+    "logo" : "Ручей",
+    "complexity" : 0,
+    "binom": "FOREST",
+    "creaturesToGenerate" : [ "deer1" ]
+  },
+
+  {
+    "id" : "deep1",
+    "name" : "Чаща",
+    "description" : "Чаща",
+    "logo" : "Чаща",
+
+    "complexity" : 1,
+    "binom": "FOREST",
+    "creaturesToGenerate" : [ "deer1" ]
+  },
+
+  {
+    "id" : "deep2",
+    "name" : "Заваленое дерево",
+    "description" : "Гигантское сваленое дерево",
+    "logo" : "Заваленое дерево",
+
+    "complexity" : 1,
+    "binom": "FOREST",
+
+    "enterDialogs" : [
+      {
+        "initialReplic" : "Ничего не видно.",
+        "startActionText" : "ADD_EFFECT:DARK:-1"
+      }
+    ],
+    "exitDialogs" : [
+      {
+        "initialReplic" : "Наконец хорошо видно.",
+        "startActionText" : "REMOVE_EFFECT:DARK:-1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+[{
+  "id" : "mount1",
+  "name" : "Скала",
+  "description" : "Скала",
+  "logo" : "Скала",
+
+  "complexity" : 0,
+  "binom": "MOUNTAIN"
+},
+
+
+  {
+    "id": "cave1",
+    "name": "Пещера",
+    "description": "Пещера",
+    "logo": "Пещера",
+    "complexity": 1,
+    "binom": "MOUNTAIN",
+    "itemsToGenerate": [
+      "mashroom2",
+      "mashroom1"
+    ]
+  }
+]

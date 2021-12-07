@@ -23,6 +23,9 @@ public enum ActionTypes {
 
     SKIP_TURNS,
 
-    SET_TRIGGER;
+    SET_TRIGGER,
+
+    WIN,
+    DIE;
 
 }
