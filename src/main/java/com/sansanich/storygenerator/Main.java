@@ -21,9 +21,12 @@ public class Main {
     }
 
     private static void game(World world, Hero hero) {
+        Messanger messages = new Messanger();
+        Demiurg demiurg = new Demiurg();
         //showLocation(hero.body.currentLocation);
         String stage = "";
         while((stage = turn(world, hero)) != null) {
+
             System.out.println(stage);
             if (stage.equals("q")) {
                     break;
@@ -31,6 +34,15 @@ public class Main {
             if (stage.equals("_")) {
                 System.out.println(world.timeline.isDay()? "День":"Ночь");
             }
+
+//            if(isWin())
+//                showWinScreen();
+//
+//            if(isDead())
+//                showDeadScreen();
+
+
+
         }
     }
 
