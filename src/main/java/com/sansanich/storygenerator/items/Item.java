@@ -6,8 +6,7 @@ public class Item extends NamedWithID {
     String image;
     int count;
 
-    String featuresDescription; // description of special item
-
     SpecialItem features;
+    String specialItemID;
 
 }

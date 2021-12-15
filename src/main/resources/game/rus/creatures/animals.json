@@ -1,0 +1,10 @@
+[{"id" :  "deer1",
+  "name" : "Рогач",
+  "description": "Рогатое пугливое животное",
+  "logo" : "deer",
+  "itemsToDrop": "",
+  "stats" : {
+   "health" : {"max" : 10, "cur" : 10},
+    "strength" : {"max" : 2, "cur" : 2}
+  }
+}]

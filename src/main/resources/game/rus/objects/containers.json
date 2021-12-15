@@ -1,0 +1,21 @@
+[{
+  "id" : "trash1",
+  "name" : "Мусор",
+  "description" : "Куча мусора",
+  "logo" : "trash",
+  "level" : 1
+},
+  {
+    "id" : "chest1",
+    "name" : "Сундук",
+    "description" : "Сундук",
+    "logo" : "chest",
+    "level" : 2,
+    "dialogs" :[
+      {
+
+      }
+    ]
+
+  }
+]

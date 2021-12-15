@@ -11,10 +11,9 @@ import java.util.List;
 
 public class InteractibleObject extends NamedWithID {
 
-    Condition visibility;
-    List<Item> items;
-    List<Dialog> dialogs;
-    List<Trigger> triggers;
+    public Condition visibility;
+    public List<Item> items;
+    public List<Dialog> dialogs;
 
-    String image;
+    public String image;
 }

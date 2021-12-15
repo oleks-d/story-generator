@@ -5,4 +5,5 @@ import com.sansanich.storygenerator.items.SpecialItem;
 
 public class Sword extends SpecialItem {
 
+    void onBeforeAttack(){};
 }

@@ -7,5 +7,5 @@ import java.util.List;
 
 public class MapTemplate  extends NamedWithID {
     //List<AreaTemplate> areas;
-    List<Location> areas;
+    public List<Location> areas;
 }

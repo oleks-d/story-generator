@@ -1,9 +1,9 @@
 package com.sansanich.storygenerator.entities;
 
 public class NamedWithID {
-    String id;
-    String name;
-    String description;
-    String logo;
+    public String id;
+    public String name;
+    public String description;
+    public String logo;
 
 }

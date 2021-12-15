@@ -1,6 +1,8 @@
 package com.sansanich.storygenerator.items;
 
 public class SpecialItem{
+    String featuresDescription; // description of special item
+
     void onWear(){};
     void onUnWear(){};
     void onUse(){};
